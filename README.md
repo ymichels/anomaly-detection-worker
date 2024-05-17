@@ -14,8 +14,8 @@ The worker ensures that each event is processed only once to prevent duplication
     ```
 
 ## Configuration
-1. Set up your AWS credentials and region by modifying the `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` variables in the script.
-2. Replace the value of `YOUR_QUEUE_URL` with the URL of your SQS queue.
+1. Set up your AWS credentials and region by modifying the `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`, and `AWS_REGION` variables in the config/aws_config.py.
+2. Set up your Redis host and port by modifying the `REDIS_HOST`, and `REDIS_PORT` variables in the config/redis_config.py.
 
 ## Usage
 1. Clone this repository or copy the script `cloudtrail_anomaly_worker.py` to your project directory.
